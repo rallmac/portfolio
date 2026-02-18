@@ -46,7 +46,7 @@ class _TTSPageState extends State<TTSPage> {
 
   final String apiBase = const String.fromEnvironment(
     'API_BASE',
-    defaultValue: 'https://reader-vmh1.onrender.com',
+    defaultValue: 'https://reader-ashen.vercel.app',
   );
 
   Future<void> speakText() async {
