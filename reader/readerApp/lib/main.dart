@@ -147,109 +147,152 @@ class _TTSPageState extends State<TTSPage> {
       appBar: AppBar(title: const Text('Welcome to Reader App')),
       body: Padding(
         padding: const EdgeInsets.all(16.0),
-        child: Column(
-          crossAxisAlignment: CrossAxisAlignment.stretch,
-          children: [
-            Row(
-              children: [
-                const Text(
-                  'Voice: ',
-                  style: TextStyle(fontSize: 16, fontWeight: FontWeight.w500),
-                ),
-                const SizedBox(width: 8),
-                DropdownButton<String>(
-                  value: _selectedVoice,
-                  items: const [
-                    DropdownMenuItem(value: 'male', child: Text('Male')),
-                    DropdownMenuItem(value: 'female', child: Text('Female')),
-                  ],
-                  onChanged: (String? newValue) {
-                    if (newValue != null) {
-                      setState(() => _selectedVoice = newValue);
-                    }
-                  },
-                ),
-              ],
-            ),
-            const SizedBox(height: 16),
-            TextField(
-              controller: _controller,
-              maxLines: 8,
-              decoration: const InputDecoration(
-                border: OutlineInputBorder(),
-                hintText: 'Enter or paste text here',
-              ),
-            ),
-            const SizedBox(height: 12),
-            Row(
-              children: [
-                ElevatedButton(
-                  onPressed: _loading ? null : speakText,
-                  child: Text(_loading ? 'Generating...' : 'Speak Text'),
-                ),
-                const SizedBox(width: 8),
-                ElevatedButton(
-                  onPressed: _loading ? null : uploadPdf,
-                  child: Text(_loading ? 'Processing...' : 'Upload PDF'),
-                ),
-              ],
-            ),
-            if (_loading) ...[
-              const SizedBox(height: 12),
-              const LinearProgressIndicator(),
-            ],
-            if (_lastPdfName != null) ...[
-              const SizedBox(height: 8),
-              Text('Selected PDF: ${_lastPdfName!}'),
-            ],
-            const SizedBox(height: 16),
-            const Text(
-              'Playback',
-              style: TextStyle(fontWeight: FontWeight.bold),
-            ),
-            const SizedBox(height: 8),
-            // Inline audio container (Web only). The web_utils will insert
-            // an <audio> element into this container when audio bytes arrive.
-            SizedBox(
-              height: 80,
-              child: kIsWeb
-                  ? HtmlElementView(viewType: 'audio-container')
-                  : const SizedBox.shrink(),
-            ),
-            const SizedBox(height: 8),
-            LinearProgressIndicator(
-              value: _duration.inMilliseconds > 0
-                  ? _position.inMilliseconds / _duration.inMilliseconds
-                  : null,
-            ),
-            const SizedBox(height: 4),
-            Text(_formatProgress()),
-            if (!kIsWeb) ...[
-              const SizedBox(height: 8),
+        child: SingleChildScrollView(
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.stretch,
+            children: [
               Row(
                 children: [
-                  ElevatedButton(
-                    onPressed: _loading ? null : pauseAudio,
-                    child: const Text('Pause'),
+                  const Text(
+                    'Voice: ',
+                    style: TextStyle(fontSize: 16, fontWeight: FontWeight.w500),
                   ),
                   const SizedBox(width: 8),
-                  ElevatedButton(
-                    onPressed: _loading ? null : resumeAudio,
-                    child: const Text('Resume'),
-                  ),
-                  const SizedBox(width: 8),
-                  ElevatedButton(
-                    onPressed: _loading ? null : stopAudio,
-                    child: const Text('Stop'),
+                  DropdownButton<String>(
+                    value: _selectedVoice,
+                    items: const [
+                      DropdownMenuItem(value: 'male', child: Text('Male')),
+                      DropdownMenuItem(value: 'female', child: Text('Female')),
+                    ],
+                    onChanged: (String? newValue) {
+                      if (newValue != null) {
+                        setState(() => _selectedVoice = newValue);
+                      }
+                    },
                   ),
                 ],
               ),
-            ],
-            if (_status.isNotEmpty) ...[
+              const SizedBox(height: 16),
+              TextField(
+                controller: _controller,
+                maxLines: 8,
+                decoration: const InputDecoration(
+                  border: OutlineInputBorder(),
+                  hintText: 'Enter or paste text here',
+                ),
+              ),
+              const SizedBox(height: 12),
+              Row(
+                children: [
+                  ElevatedButton(
+                    onPressed: _loading ? null : speakText,
+                    child: Text(_loading ? 'Generating...' : 'Speak Text'),
+                  ),
+                  const SizedBox(width: 8),
+                  ElevatedButton(
+                    onPressed: _loading ? null : uploadPdf,
+                    child: Text(_loading ? 'Processing...' : 'Upload PDF'),
+                  ),
+                ],
+              ),
+              if (_loading) ...[
+                const SizedBox(height: 12),
+                const LinearProgressIndicator(),
+              ],
+              if (_lastPdfName != null) ...[
+                const SizedBox(height: 8),
+                Text('Selected PDF: ${_lastPdfName!}'),
+              ],
+              const SizedBox(height: 16),
+              const Text(
+                'Playback',
+                style: TextStyle(fontWeight: FontWeight.bold),
+              ),
               const SizedBox(height: 8),
-              Text(_status),
+              // Inline audio container (Web only). The web_utils will insert
+              // an <audio> element into this container when audio bytes arrive.
+              SizedBox(
+                height: 80,
+                child: kIsWeb
+                    ? HtmlElementView(viewType: 'audio-container')
+                    : const SizedBox.shrink(),
+              ),
+              const SizedBox(height: 8),
+              LinearProgressIndicator(
+                value: _duration.inMilliseconds > 0
+                    ? _position.inMilliseconds / _duration.inMilliseconds
+                    : null,
+              ),
+              const SizedBox(height: 4),
+              Text(_formatProgress()),
+              if (!kIsWeb) ...[
+                const SizedBox(height: 8),
+                Row(
+                  children: [
+                    ElevatedButton(
+                      onPressed: _loading ? null : pauseAudio,
+                      child: const Text('Pause'),
+                    ),
+                    const SizedBox(width: 8),
+                    ElevatedButton(
+                      onPressed: _loading ? null : resumeAudio,
+                      child: const Text('Resume'),
+                    ),
+                    const SizedBox(width: 8),
+                    ElevatedButton(
+                      onPressed: _loading ? null : stopAudio,
+                      child: const Text('Stop'),
+                    ),
+                  ],
+                ),
+              ],
+              if (_status.isNotEmpty) ...[
+                const SizedBox(height: 8),
+                Text(_status),
+              ],
+              const SizedBox(height: 24),
+              // Advertisement Footer Card
+              Card(
+                elevation: 2,
+                color: Colors.blue.shade50,
+                child: Padding(
+                  padding: const EdgeInsets.symmetric(
+                    vertical: 16.0,
+                    horizontal: 12.0,
+                  ),
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.stretch,
+                    children: [
+                      const Text(
+                        'Find a job today',
+                        textAlign: TextAlign.center,
+                        style: TextStyle(
+                          fontSize: 18,
+                          fontWeight: FontWeight.bold,
+                          color: Colors.blue,
+                        ),
+                      ),
+                      const SizedBox(height: 8),
+                      GestureDetector(
+                        onTap: () {
+                          openUrl('https://www.jobstraight.com');
+                        },
+                        child: const Text(
+                          'www.jobstraight.com',
+                          textAlign: TextAlign.center,
+                          style: TextStyle(
+                            fontSize: 16,
+                            color: Colors.blue,
+                            decoration: TextDecoration.underline,
+                          ),
+                        ),
+                      ),
+                    ],
+                  ),
+                ),
+              ),
             ],
-          ],
+          ),
         ),
       ),
     );
