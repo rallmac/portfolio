@@ -1,0 +1,608 @@
+/* Responsive Design Improvements - Minimal approach to avoid breaking existing responsive design */
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+/* Ensure all images are responsive */
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Mobile-first approach - adjust font sizes for smaller screens */
+@media (max-width: 579px) {
+  body {
+    font-size: 14px;
+  }
+
+  h1 {
+    font-size: clamp(1.5rem, 5vw, 2rem);
+  }
+
+  h2 {
+    font-size: clamp(1.25rem, 4vw, 1.75rem);
+  }
+
+  h3 {
+    font-size: clamp(1rem, 3vw, 1.5rem);
+  }
+
+  p {
+    font-size: clamp(0.875rem, 2.5vw, 1rem);
+  }
+}
+
+/* Additional mobile centering and overflow fixes */
+@media (max-width: 579px) {
+  /* Constrain and center the outer containers */
+  div[class*="max-w-[1660px]"] {
+    max-width: 100% !important;
+    width: 100% !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    padding-left: 16px !important;
+    padding-right: 16px !important;
+    box-sizing: border-box !important;
+  }
+
+  /* Neutralize negative inset utilities that cause off-screen content */
+  [class*="inset-[0_-"] {
+    inset: 0 !important;
+  }
+
+  /* Make generic clickable blocks fill available width */
+  a.block.cursor-pointer.relative.shrink-0,
+  a.block.cursor-pointer.relative.shrink-0 > div {
+    width: 100% !important;
+    left: 0 !important;
+    right: 0 !important;
+  }
+
+  /* Make top carousel banner/hero image bigger and more prominent */
+  [data-name="Margin"][class*="w-[394px]"] {
+    width: 100% !important;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
+
+  /* Ensure carousel banner images are larger */
+  [data-name="Container"][class*="w-[362px]"] {
+    width: 100% !important;
+  }
+
+  /* Make carousel container take full width */
+  [data-name="Container"][class*="w-[3546px]"] {
+    width: 100% !important;
+    max-width: 100% !important;
+  }
+}
+
+/* Tablet adjustments */
+@media (min-width: 580px) and (max-width: 895px) {
+  body {
+    font-size: 15px;
+  }
+
+  /* Make generated wide container/margin elements fluid on tablet */
+  [class*="w-[3546px]"][data-name="Container"],
+  [class*="w-[1636px]"][data-name="Margin"],
+  [class*="w-[394px]"][data-name="Margin"],
+  [class*="w-[161.73px]"][data-name="Margin"],
+  [class*="w-[161.74px]"][data-name="Margin"] {
+    width: 100% !important;
+    max-width: 100% !important;
+    box-sizing: border-box !important;
+    padding-right: 8px !important;
+  }
+
+  /* Prevent track offsets and ensure slides fill the padded width */
+  [data-slot="carousel"] {
+    padding-left: 16px !important;
+    padding-right: 16px !important;
+  }
+
+  [data-slot="carousel-content"] > .flex,
+  [data-slot="carousel-content"] .-ml-4 {
+    margin-left: 0 !important;
+    padding-left: 0 !important;
+  }
+
+  [data-slot="carousel-item"] {
+    flex: 0 0 calc(100% - 32px) !important;
+    max-width: calc(100% - 32px) !important;
+  }
+
+  /* Ensure images don't use negative offsets */
+  [data-name="Margin"] img,
+  [data-name="Container"] img {
+    position: absolute !important;
+    left: 0 !important;
+    top: 0 !important;
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: cover !important;
+    transform: none !important;
+    max-width: none !important;
+  }
+
+  /* Center inner container and image content */
+  [data-name="Margin"] > [data-name="Container"],
+  [data-name="Container"] > [data-name="Container"] {
+    margin-left: auto !important;
+    margin-right: auto !important;
+    width: 100% !important;
+    max-width: 100% !important;
+  }
+
+  [data-name="Margin"] img,
+  [data-name="Container"] img {
+    left: 50% !important;
+    transform: translateX(-50%) !important;
+    object-position: center !important;
+  }
+}
+
+/* Mid-range center: give carousel a centered max-width and side padding
+   for small tablets and large phones (271px - 890px) so it matches
+   the visual margins used at ~1000px. */
+@media (min-width: 271px) and (max-width: 890px) {
+  [data-slot="carousel"] {
+    margin-left: auto !important;
+    margin-right: auto !important;
+    max-width: 1000px !important;
+    padding-left: 24px !important;
+    padding-right: 24px !important;
+    box-sizing: border-box !important;
+    width: 100% !important;
+  }
+
+  /* Ensure the internal track isn't offset to the left */
+  [data-slot="carousel-content"] > .flex,
+  [data-slot="carousel-content"] .-ml-4 {
+    margin-left: 0 !important;
+    padding-left: 0 !important;
+  }
+
+  /* Each slide should respect the side padding */
+  [data-slot="carousel-item"] {
+    flex: 0 0 calc(100% - 48px) !important;
+    max-width: calc(100% - 48px) !important;
+    box-sizing: border-box !important;
+  }
+
+  /* Center images inside slides */
+  [data-slot="carousel-item"] img {
+    left: 50% !important;
+    transform: translateX(-50%) !important;
+    object-position: center !important;
+    max-width: none !important;
+  }
+
+  /* Strong overrides for generated wide elements that break margins */
+  div[data-name="Container"].content-stretch[class*="w-[3546px]"],
+  div[data-name="Container"][class*="w-[1636px]"],
+  div[data-name="Margin"][class*="w-[394px]"],
+  div[data-name="Container"][class*="w-[362px]"] {
+    width: auto !important;
+    max-width: calc(100% - 48px) !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    box-sizing: border-box !important;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+    transform: none !important;
+  }
+
+  /* Ensure inner link and image wrappers fill the centered slide */
+  div[data-name="Margin"] a.block.cursor-pointer.relative.shrink-0,
+  div[data-name="Container"] a.block.cursor-pointer.relative.shrink-0 {
+    width: 100% !important;
+    left: 0 !important;
+    right: 0 !important;
+  }
+}
+
+/* Also constrain the outer page container that holds the carousel so
+   the carousel appears centered with the same margins as at 1000px */
+@media (min-width: 271px) and (max-width: 890px) {
+  div[class*="max-w-[1660px]"] {
+    max-width: 1000px !important;
+    width: 100% !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    padding-left: 24px !important;
+    padding-right: 24px !important;
+    box-sizing: border-box !important;
+  }
+}
+
+/* Small laptop/desktop */
+@media (min-width: 896px) and (max-width: 1231px) {
+  body {
+    font-size: 16px;
+  }
+}
+
+/* Medium desktop */
+@media (min-width: 1232px) and (max-width: 1679px) {
+  body {
+    font-size: 16px;
+  }
+}
+
+/* Large desktop */
+@media (min-width: 1680px) {
+  body {
+    font-size: 16px;
+  }
+}
+
+/* Touch-friendly sizing for mobile */
+@media (max-width: 579px) {
+  button,
+  a {
+    min-height: 44px;
+    min-width: 44px;
+  }
+
+  /* Improved carousel sizing for mobile (below 351px) */
+  [data-slot="carousel"] {
+    width: 100% !important;
+    box-sizing: border-box !important;
+    padding-left: 8px !important;
+    padding-right: 8px !important;
+  }
+
+  [data-slot="carousel-content"] {
+    overflow: hidden !important;
+  }
+
+  [data-slot="carousel-content"] > .flex {
+    margin-left: 0 !important;
+    gap: 8px !important;
+    padding-left: 0 !important;
+  }
+
+  [data-slot="carousel-content"] > .flex.-ml-4,
+  [data-slot="carousel-content"] .-ml-4 {
+    margin-left: 0 !important;
+  }
+
+  /* Full-width carousel slides on smallest screens */
+  [data-slot="carousel-item"] {
+    flex: 0 0 calc(100% - 16px) !important;
+    max-width: calc(100% - 16px) !important;
+    min-width: calc(100% - 16px) !important;
+    padding-left: 0 !important;
+    box-sizing: border-box !important;
+  }
+
+  [data-slot="carousel-item"] > * {
+    width: 100% !important;
+  }
+
+  /* Ensure carousel container widths are responsive */
+  [class*="w-[3546px]"][data-name="Container"],
+  [class*="w-[1636px]"][data-name="Margin"],
+  [class*="w-[394px]"][data-name="Margin"],
+  [class*="w-[161.73px]"][data-name="Margin"],
+  [class*="w-[161.74px]"][data-name="Margin"] {
+    width: 100% !important;
+    max-width: 100% !important;
+    padding-right: 0 !important;
+    box-sizing: border-box !important;
+  }
+}
+
+/* Stronger, scoped mobile overrides when `.mobile` is present on html/body */
+.mobile {
+  overflow-x: hidden !important;
+}
+
+.mobile div[class*="max-w-[1660px]"] {
+  max-width: 100% !important;
+  width: 100% !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+  padding-left: 16px !important;
+  padding-right: 16px !important;
+  box-sizing: border-box !important;
+}
+
+.mobile [class*="inset-[0_-"] {
+  inset: 0 !important;
+}
+
+.mobile a.block.cursor-pointer.relative.shrink-0,
+.mobile a.block.cursor-pointer.relative.shrink-0 > div {
+  width: 100% !important;
+  left: 0 !important;
+  right: 0 !important;
+}
+
+/* Make absolute images fill their containers on mobile */
+.mobile [data-name="Margin"] img,
+.mobile [data-name="Container"] img {
+  position: absolute !important;
+  left: 0 !important;
+  top: 0 !important;
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: cover !important;
+  transform: none !important;
+  max-width: none !important;
+}
+
+/* Hide horizontal scrollbar for categories list container on big screens */
+@media (min-width: 896px) {
+  .content-stretch.flex.flex-col.items-start.overflow-auto {
+    overflow-x: hidden;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+
+  .content-stretch.flex.flex-col.items-start.overflow-auto::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+/* ===== Responsive Carousel, Categories, and Shop by Brand Fixes (scoped) ===== */
+
+/* Mobile (390px and below) */
+@media (max-width: 579px) {
+  .cursor-pointer[data-name="Container"] {
+    display: grid !important;
+    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+    gap: 12px !important;
+    width: 100% !important;
+    height: auto !important;
+  }
+
+  .cursor-pointer[data-name="Container"] > a {
+    position: relative !important;
+    left: auto !important;
+    right: auto !important;
+    top: auto !important;
+    height: auto !important;
+    width: 100% !important;
+    aspect-ratio: 16/9 !important;
+    margin: 0 !important;
+    flex: 1 1 50% !important;
+    min-width: 0 !important;
+  }
+}
+
+/* Tablet (580px - 895px) */
+@media (min-width: 580px) and (max-width: 895px) {
+  .cursor-pointer[data-name="Container"] {
+    display: grid !important;
+    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+    gap: 10px !important; /* tighter spacing so cards are closer */
+    width: 100% !important;
+    height: auto !important;
+    margin-top: 8px !important; /* reduce gap under the heading */
+  }
+
+  .cursor-pointer[data-name="Container"] > a {
+    position: relative !important;
+    left: auto !important;
+    right: auto !important;
+    top: auto !important;
+    height: auto !important;
+    width: 100% !important;
+    aspect-ratio: 4/3 !important; /* taller cards on tablet to look larger */
+    flex: 1 1 50% !important;
+    min-width: 0 !important;
+    min-height: 180px !important; /* ensure a decent visual size */
+  }
+
+  /* Specifically tighten the heading-to-grid spacing on tablet */
+  .content-stretch.flex.items-center.relative.shrink-0.w-full[data-name="Container"] + .cursor-pointer[data-name="Container"] {
+    margin-top: 8px !important;
+  }
+}
+
+/* Small Laptop (896px - 1231px) */
+@media (min-width: 896px) and (max-width: 1231px) {
+  .cursor-pointer[data-name="Container"] {
+    display: grid !important;
+    grid-template-columns: repeat(3, minmax(0, 1fr)) !important;
+    gap: 16px !important;
+    width: 100% !important;
+    height: auto !important;
+  }
+
+  .cursor-pointer[data-name="Container"] > a {
+    position: relative !important;
+    left: auto !important;
+    right: auto !important;
+    top: auto !important;
+    height: auto !important;
+    width: 100% !important;
+    aspect-ratio: 16/9 !important;
+    flex: 1 1 33% !important;
+    min-width: 0 !important;
+  }
+}
+
+/* Medium Desktop (1232px - 1679px) */
+@media (min-width: 1232px) and (max-width: 1679px) {
+  .cursor-pointer[data-name="Container"] {
+    display: grid !important;
+    grid-template-columns: repeat(4, minmax(0, 1fr)) !important;
+    gap: 18px !important;
+    width: 100% !important;
+    height: auto !important;
+  }
+
+  .cursor-pointer[data-name="Container"] > a {
+    position: relative !important;
+    left: auto !important;
+    right: auto !important;
+    top: auto !important;
+    height: auto !important;
+    width: 100% !important;
+    aspect-ratio: 16/9 !important;
+    min-width: 0 !important;
+  }
+}
+
+/* Large Desktop (>= 1680px) */
+@media (min-width: 1680px) {
+  .cursor-pointer[data-name="Container"] {
+    display: grid !important;
+    grid-template-columns: repeat(4, minmax(0, 1fr)) !important;
+    gap: 20px !important;
+    width: 100% !important;
+    height: auto !important;
+  }
+
+  .cursor-pointer[data-name="Container"] > a {
+    position: relative !important;
+    left: auto !important;
+    right: auto !important;
+    top: auto !important;
+    height: auto !important;
+    width: 100% !important;
+    aspect-ratio: 16/9 !important;
+    min-width: 0 !important;
+  }
+}
+
+/* Ensure card images fill their containers across all breakpoints */
+a[data-name="Component 11"] > div > img {
+  position: absolute !important;
+  inset: 0 !important;
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: cover !important;
+  left: auto !important;
+  top: auto !important;
+}
+
+/* Fix carousel width for mid-phone to small-tablet screens (351px - 751px) */
+@media (min-width: 351px) and (max-width: 751px) {
+  [data-slot="carousel"] {
+    width: 100% !important;
+    box-sizing: border-box !important;
+    padding-left: 8px !important;
+    padding-right: 8px !important;
+  }
+
+  [data-slot="carousel-content"] {
+    overflow: hidden !important;
+  }
+
+  /* Remove the negative left margin used for spacing and reset item padding
+     so the carousel's internal track aligns with the viewport */
+  [data-slot="carousel-content"] > .flex {
+    margin-left: 0 !important;
+    gap: 8px !important;
+    padding-left: 0 !important;
+  }
+
+  /* Override utility negative-margin classes that push the track left */
+  [data-slot="carousel-content"] > .flex.-ml-4,
+  [data-slot="carousel-content"] .-ml-4 {
+    margin-left: 0 !important;
+  }
+
+  /* Ensure each slide occupies nearly full viewport width with minimal padding */
+  [data-slot="carousel-item"] {
+    flex: 0 0 calc(100% - 16px) !important;
+    max-width: calc(100% - 16px) !important;
+    padding-left: 0 !important;
+    box-sizing: border-box !important;
+    min-width: calc(100% - 16px) !important;
+  }
+
+  /* Ensure slide contents fill the slide width */
+  [data-slot="carousel-item"] > * {
+    width: 100% !important;
+  }
+
+  /* Make wide generated containers fluid on small/medium phones */
+  [class*="w-[3546px]"][data-name="Container"],
+  [class*="w-[1636px]"][data-name="Margin"] {
+    width: 100% !important;
+    max-width: 100% !important;
+  }
+
+  /* Override specific generated margin widths to be full width */
+  [class*="w-[394px]"][data-name="Margin"],
+  [class*="w-[161.73px]"][data-name="Margin"],
+  [class*="w-[161.74px]"][data-name="Margin"] {
+    width: 100% !important;
+    padding-right: 0 !important;
+    box-sizing: border-box !important;
+  }
+
+  /* Ensure anchor/image wrappers are full width and keep aspect ratio */
+  [data-name="Margin"] a.block.cursor-pointer.relative.shrink-0,
+  [data-name="Margin"] a.block.cursor-pointer.relative.shrink-0 > div {
+    width: 100% !important;
+    left: 0 !important;
+    right: 0 !important;
+  }
+
+  /* Make images cover their containers and stop negative offsets */
+  [data-name="Margin"] img,
+  [data-name="Container"] img {
+    position: absolute !important;
+    left: 0 !important;
+    top: 0 !important;
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: cover !important;
+    transform: none !important;
+    max-width: none !important;
+  }
+
+  /* Center inner container and image content for tablet */
+  [data-name="Margin"] > [data-name="Container"],
+  [data-name="Container"] > [data-name="Container"] {
+    margin-left: auto !important;
+    margin-right: auto !important;
+    width: 100% !important;
+    max-width: 100% !important;
+  }
+
+  [data-name="Margin"] img,
+  [data-name="Container"] img {
+    left: 50% !important;
+    transform: translateX(-50%) !important;
+    object-position: center !important;
+  }
+}
+
+/* Category Card Hover Animations */
+@keyframes scaleUpOnHover {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.05);
+  }
+}
+
+/* Apply hover animation to category cards */
+a[data-name="Component 11"] {
+  transition: all 0.3s ease-in-out;
+}
+
+a[data-name="Component 11"]:hover {
+  animation: scaleUpOnHover 0.3s ease-in-out forwards;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+}
+
