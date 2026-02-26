@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import { createPortal } from "react-dom";
 import svgPaths from "./svg-a1i88rwup0";
 import clsx from "clsx";
-import imgComponent1 from "figma:asset/5fc2ccf00fdcc3ccfef4f6ee2aa7349ff2342fb3.png";
+import imgComponent1 from "figma:asset/grand_pe_logo.png";
 import imgComponent2 from "figma:asset/3fd0f8d0e8cb4e879d99f298bd07ac85a38f1aad.png";
 import imgComponent11 from "figma:asset/9cd90e9d09ab540087f7330bd8758c42b6882d87.png";
 import imgComponent12 from "figma:asset/a81a9ed74f723406ef773c9c17cfc82c00e98443.png";
@@ -34,7 +34,7 @@ import imgContainer2 from "figma:asset/0f3e28460737a81127d4d6a4af70bed2944ece16.
 import imgComponent10 from "figma:asset/f8918455692e19658363b3856539697cfe8322a1.png";
 import imgComponent27 from "figma:asset/d4b2f4c519026c49b2264d09dcddf4f430623fbf.png";
 import imgComponent28 from "figma:asset/f7792e67ec88c9e81ab890442afe41f5b82cfb44.png";
-import imgOutOfStock from "figma:asset/fa71815af4e6f1e10afc997e1839d7611fa145aa.png";
+import imgOutOfStock from "figma:asset/out_of_stock_label.png";
 import imgComponent29 from "figma:asset/046e33f576771f1529a0a0515157f6b383ee7671.png";
 import imgComponent30 from "figma:asset/695d3aad62dde54dad7f4cc0b8d82e41be829ba1.png";
 
@@ -48,7 +48,7 @@ function BackgroundBackgroundImage({ children }: React.PropsWithChildren<{}>) {
 
 function ComponentBackgroundImage5({ children }: React.PropsWithChildren<{}>) {
   return (
-    <a href="https://fouanistore.com/search" className="aspect-[362/203.63] block cursor-pointer relative shrink-0 w-full">
+    <a href="https://grandpestore.com/search" className="aspect-[362/203.63] block cursor-pointer relative shrink-0 w-full">
       <div className="absolute inset-0 overflow-hidden pointer-events-none">{children}</div>
     </a>
   );
@@ -59,7 +59,7 @@ type BackgroundImage2Props = {
 
 function BackgroundImage2({ children, additionalClassNames = "" }: React.PropsWithChildren<BackgroundImage2Props>) {
   return (
-    <a href="https://fouanistore.com/" className={clsx("block cursor-pointer relative shrink-0", additionalClassNames)}>
+    <a href="https://grandpestore.com/" className={clsx("block cursor-pointer relative shrink-0", additionalClassNames)}>
       <div className="absolute inset-0 overflow-hidden">{children}</div>
     </a>
   );
@@ -148,7 +148,7 @@ function ComponentBackgroundImageAndText1({ text }: ComponentBackgroundImageAndT
   return (
     <div className="content-stretch flex items-start relative shrink-0 w-full">
       <div className="basis-0 flex flex-col font-['Poppins:Regular',sans-serif] grow justify-center leading-[0] min-h-px min-w-px not-italic relative shrink-0 text-[0px] text-black tracking-[0.255px]">
-        <a className="block cursor-pointer leading-[20px] text-[14px]" href="https://fouanistore.com/search">
+        <a className="block cursor-pointer leading-[20px] text-[14px]" href="https://grandpestore.com/search">
           {text}
         </a>
       </div>
@@ -158,7 +158,7 @@ function ComponentBackgroundImageAndText1({ text }: ComponentBackgroundImageAndT
 
 function LinkBackgroundImage() {
   return (
-    <a href="https://fouanistore.com/search" className="block cursor-pointer h-[40px] relative rounded-[9999px] shrink-0 w-full">
+    <a href="https://grandpestore.com/search" className="block cursor-pointer h-[40px] relative rounded-[9999px] shrink-0 w-full">
       <div aria-hidden="true" className="absolute border border-[#7e7576] border-solid inset-0 pointer-events-none rounded-[9999px]" />
     </a>
   );
@@ -333,7 +333,7 @@ function Component2() {
 
 function Component1() {
   return (
-    <a className="content-stretch cursor-pointer flex items-center p-0 relative rounded-[9999px] shrink-0" data-name="Component 3" href="https://fouanistore.com/showrooms/showrooms-map">
+    <a className="content-stretch cursor-pointer flex items-center p-0 relative rounded-[9999px] shrink-0" data-name="Component 3" href="https://grandpestore.com/showrooms/showrooms-map">
       <Component2 />
     </a>
   );
@@ -373,7 +373,7 @@ function Container2() {
 
 function Component4() {
   return (
-    <a className="content-stretch cursor-pointer flex items-center p-0 relative shrink-0" data-name="Component 6" href="https://fouanistore.com/account/login">
+    <a className="content-stretch cursor-pointer flex items-center p-0 relative shrink-0" data-name="Component 6" href="https://grandpestore.com/account/login">
       <Container2 />
     </a>
   );
@@ -622,7 +622,7 @@ function Background2() {
 
 function Component9() {
   return (
-    <a className="absolute aspect-[174/102.34] block left-0 overflow-clip right-[188px] rounded-[7px] top-0" data-name="Component 11" href="https://fouanistore.com/search">
+    <a className="absolute aspect-[174/102.34] block left-0 overflow-clip right-[188px] rounded-[7px] top-0" data-name="Component 11" href="https://grandpestore.com/search">
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
         <img alt="" className="absolute h-full left-[-8.82%] max-w-none top-0 w-[117.63%]" src={imgComponent11} />
       </div>
@@ -641,7 +641,7 @@ function Background3() {
 
 function Component19() {
   return (
-    <a className="absolute aspect-[174/102.34] block left-[188px] overflow-clip right-0 rounded-[7px] top-0" data-name="Component 11" href="https://fouanistore.com/search">
+    <a className="absolute aspect-[174/102.34] block left-[188px] overflow-clip right-0 rounded-[7px] top-0" data-name="Component 11" href="https://grandpestore.com/search">
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
         <img alt="" className="absolute h-full left-[-1.28%] max-w-none top-0 w-[102.57%]" src={imgComponent12} />
       </div>
@@ -660,7 +660,7 @@ function Background4() {
 
 function Component20() {
   return (
-    <a className="absolute aspect-[174/102.34] block left-0 overflow-clip right-[188px] rounded-[7px] top-[116.34px]" data-name="Component 11" href="https://fouanistore.com/search">
+    <a className="absolute aspect-[174/102.34] block left-0 overflow-clip right-[188px] rounded-[7px] top-[116.34px]" data-name="Component 11" href="https://grandpestore.com/search">
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
         <img alt="" className="absolute h-full left-[-8.82%] max-w-none top-0 w-[117.63%]" src={imgComponent13} />
       </div>
@@ -679,7 +679,7 @@ function Background5() {
 
 function Component21() {
   return (
-    <a className="absolute aspect-[174/102.34] block left-[188px] overflow-clip right-0 rounded-[7px] top-[116.34px]" data-name="Component 11" href="https://fouanistore.com/search">
+    <a className="absolute aspect-[174/102.34] block left-[188px] overflow-clip right-0 rounded-[7px] top-[116.34px]" data-name="Component 11" href="https://grandpestore.com/search">
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
         <img alt="" className="absolute h-full left-[-8.82%] max-w-none top-0 w-[117.63%]" src={imgComponent14} />
       </div>
@@ -698,7 +698,7 @@ function Background6() {
 
 function Component22() {
   return (
-    <a className="absolute aspect-[174/102.34] block left-0 overflow-clip right-[188px] rounded-[7px] top-[232.68px]" data-name="Component 11" href="https://fouanistore.com/search">
+    <a className="absolute aspect-[174/102.34] block left-0 overflow-clip right-[188px] rounded-[7px] top-[232.68px]" data-name="Component 11" href="https://grandpestore.com/search">
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
         <img alt="" className="absolute h-full left-[-8.82%] max-w-none top-0 w-[117.63%]" src={imgComponent15} />
       </div>
@@ -732,7 +732,7 @@ function Background7() {
 
 function Component23() {
   return (
-    <a className="absolute aspect-[174/102.34] block left-[188px] overflow-clip right-0 rounded-[7px] top-[232.68px]" data-name="Component 11" href="https://fouanistore.com/search">
+    <a className="absolute aspect-[174/102.34] block left-[188px] overflow-clip right-0 rounded-[7px] top-[232.68px]" data-name="Component 11" href="https://grandpestore.com/search">
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
         <img alt="" className="absolute h-full left-[-8.82%] max-w-none top-0 w-[117.63%]" src={imgComponent16} />
       </div>
@@ -751,7 +751,7 @@ function Background8() {
 
 function Component24() {
   return (
-    <a className="absolute aspect-[174/102.34] block left-0 overflow-clip right-[188px] rounded-[7px] top-[349.03px]" data-name="Component 11" href="https://fouanistore.com/search">
+    <a className="absolute aspect-[174/102.34] block left-0 overflow-clip right-[188px] rounded-[7px] top-[349.03px]" data-name="Component 11" href="https://grandpestore.com/search">
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
         <img alt="" className="absolute h-full left-[-8.82%] max-w-none top-0 w-[117.63%]" src={imgComponent17} />
       </div>
@@ -770,7 +770,7 @@ function Background9() {
 
 function Component25() {
   return (
-    <a className="absolute aspect-[174/102.34] block left-[188px] overflow-clip right-0 rounded-[7px] top-[349.03px]" data-name="Component 11" href="https://fouanistore.com/search">
+    <a className="absolute aspect-[174/102.34] block left-[188px] overflow-clip right-0 rounded-[7px] top-[349.03px]" data-name="Component 11" href="https://grandpestore.com/search">
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
         <img alt="" className="absolute h-full left-[-8.82%] max-w-none top-0 w-[117.63%]" src={imgComponent18} />
       </div>
@@ -876,7 +876,7 @@ function List() {
 function Component10() {
   return (
     <div className="content-stretch flex items-start relative shrink-0 w-full" data-name="Component 12">
-      <a className="basis-0 flex flex-col font-['Poppins:Regular',sans-serif] grow justify-center leading-[0] min-h-px min-w-px not-italic relative shrink-0 text-[#1b1b1b] text-[14px] tracking-[0.255px]" href="https://salva.ams3.cdn.digitaloceanspaces.com/production/tenants/fouani/document/6/6eacf994-deb2-4114-8764-de54a989e471/doc.pdf">
+      <a className="basis-0 flex flex-col font-['Poppins:Regular',sans-serif] grow justify-center leading-[0] min-h-px min-w-px not-italic relative shrink-0 text-[#1b1b1b] text-[14px] tracking-[0.255px]" href="https://salva.ams3.cdn.digitaloceanspaces.com/production/tenants/grandpe/document/6/6eacf994-deb2-4114-8764-de54a989e471/doc.pdf">
         <p className="cursor-pointer leading-[20px]">LG Warranty</p>
       </a>
     </div>
@@ -932,7 +932,7 @@ function Component11() {
     <div className="bg-black relative rounded-[9999px] shrink-0 w-full" data-name="Component 13">
       <div className="flex flex-row items-center justify-center size-full">
         <div className="content-stretch flex items-center justify-center px-[21px] py-[10.5px] relative w-full">
-          <a className="flex flex-col font-['Poppins:Medium',sans-serif] justify-center leading-[0] not-italic relative shrink-0 text-[16px] text-center text-nowrap text-white tracking-[0.153px]" href="https://fouanistore.com/product/711">
+          <a className="flex flex-col font-['Poppins:Medium',sans-serif] justify-center leading-[0] not-italic relative shrink-0 text-[16px] text-center text-nowrap text-white tracking-[0.153px]" href="https://grandpestore.com/product/711">
             <p className="cursor-pointer leading-[24px]">View Product Details</p>
           </a>
         </div>
@@ -1012,7 +1012,7 @@ function Background11() {
 
 function Component27() {
   return (
-    <a className="absolute aspect-[174/102.34] block left-0 overflow-clip right-[188px] rounded-[7px] top-0" data-name="Component 11" href="https://fouanistore.com/search">
+    <a className="absolute aspect-[174/102.34] block left-0 overflow-clip right-[188px] rounded-[7px] top-0" data-name="Component 11" href="https://grandpestore.com/search">
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
         <img alt="" className="absolute h-full left-[-8.82%] max-w-none top-0 w-[117.63%]" src={imgComponent19} />
       </div>
@@ -1031,7 +1031,7 @@ function Background12() {
 
 function Component28() {
   return (
-    <a className="absolute aspect-[174/102.34] block left-[188px] overflow-clip right-0 rounded-[7px] top-0" data-name="Component 11" href="https://fouanistore.com/search">
+    <a className="absolute aspect-[174/102.34] block left-[188px] overflow-clip right-0 rounded-[7px] top-0" data-name="Component 11" href="https://grandpestore.com/search">
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
         <img alt="" className="absolute h-full left-[-8.82%] max-w-none top-0 w-[117.63%]" src={imgComponent20} />
       </div>
@@ -1050,7 +1050,7 @@ function Background13() {
 
 function Component29() {
   return (
-    <a className="absolute aspect-[174/102.34] block left-0 overflow-clip right-[188px] rounded-[7px] top-[116.34px]" data-name="Component 11" href="https://fouanistore.com/search">
+    <a className="absolute aspect-[174/102.34] block left-0 overflow-clip right-[188px] rounded-[7px] top-[116.34px]" data-name="Component 11" href="https://grandpestore.com/search">
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
         <img alt="" className="absolute h-full left-[-8.82%] max-w-none top-0 w-[117.63%]" src={imgComponent21} />
       </div>
@@ -1069,7 +1069,7 @@ function Background14() {
 
 function Component30() {
   return (
-    <a className="absolute aspect-[174/102.34] block left-[188px] overflow-clip right-0 rounded-[7px] top-[116.34px]" data-name="Component 11" href="https://fouanistore.com/search">
+    <a className="absolute aspect-[174/102.34] block left-[188px] overflow-clip right-0 rounded-[7px] top-[116.34px]" data-name="Component 11" href="https://grandpestore.com/search">
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
         <img alt="" className="absolute h-full left-[-2.28%] max-w-none top-0 w-[104.56%]" src={imgComponent22} />
       </div>
@@ -1088,7 +1088,7 @@ function Background15() {
 
 function Component31() {
   return (
-    <a className="absolute aspect-[174/102.34] block left-0 overflow-clip right-[188px] rounded-[7px] top-[232.69px]" data-name="Component 11" href="https://fouanistore.com/search">
+    <a className="absolute aspect-[174/102.34] block left-0 overflow-clip right-[188px] rounded-[7px] top-[232.69px]" data-name="Component 11" href="https://grandpestore.com/search">
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
         <img alt="" className="absolute h-[170.02%] left-0 max-w-none top-[-35.01%] w-full" src={imgComponent23} />
       </div>
@@ -1107,7 +1107,7 @@ function Background16() {
 
 function Component32() {
   return (
-    <a className="absolute aspect-[174/102.34] block left-[188px] overflow-clip right-0 rounded-[7px] top-[232.69px]" data-name="Component 11" href="https://fouanistore.com/search">
+    <a className="absolute aspect-[174/102.34] block left-[188px] overflow-clip right-0 rounded-[7px] top-[232.69px]" data-name="Component 11" href="https://grandpestore.com/search">
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
         <img alt="" className="absolute h-[170.02%] left-0 max-w-none top-[-35.01%] w-full" src={imgComponent24} />
       </div>
@@ -1126,7 +1126,7 @@ function Background17() {
 
 function Component33() {
   return (
-    <a className="absolute aspect-[174/102.34] block left-0 overflow-clip right-[188px] rounded-[7px] top-[349.03px]" data-name="Component 11" href="https://fouanistore.com/search">
+    <a className="absolute aspect-[174/102.34] block left-0 overflow-clip right-[188px] rounded-[7px] top-[349.03px]" data-name="Component 11" href="https://grandpestore.com/search">
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
         <img alt="" className="absolute h-[170.02%] left-0 max-w-none top-[-35.01%] w-full" src={imgComponent25} />
       </div>
@@ -1145,7 +1145,7 @@ function Background18() {
 
 function Component34() {
   return (
-    <a className="absolute aspect-[174/102.34] block left-[188px] overflow-clip right-0 rounded-[7px] top-[349.03px]" data-name="Component 11" href="https://fouanistore.com/search">
+    <a className="absolute aspect-[174/102.34] block left-[188px] overflow-clip right-0 rounded-[7px] top-[349.03px]" data-name="Component 11" href="https://grandpestore.com/search">
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
         <img alt="" className="absolute h-full left-[-8.82%] max-w-none top-0 w-[117.63%]" src={imgComponent26} />
       </div>
@@ -1370,7 +1370,7 @@ function Margin2() {
 
 function Component37() {
   return (
-    <a className="absolute aspect-[151.73/151.74] block cursor-pointer left-0 overflow-clip right-0 top-0" data-name="Component 1" href="https://fouanistore.com/product/373">
+    <a className="absolute aspect-[151.73/151.74] block cursor-pointer left-0 overflow-clip right-0 top-0" data-name="Component 1" href="https://grandpestore.com/product/373">
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
         <img alt="" className="absolute h-[99.99%] left-0 max-w-none top-0 w-full" src={imgComponent3} />
       </div>
@@ -1423,7 +1423,7 @@ function Margin3() {
 
 function Component38() {
   return (
-    <a className="absolute aspect-[151.73/151.74] block cursor-pointer left-0 overflow-clip right-0 top-0" data-name="Component 1" href="https://fouanistore.com/product/202">
+    <a className="absolute aspect-[151.73/151.74] block cursor-pointer left-0 overflow-clip right-0 top-0" data-name="Component 1" href="https://grandpestore.com/product/202">
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
         <img alt="" className="absolute h-[99.99%] left-0 max-w-none top-0 w-full" src={imgComponent4} />
       </div>
@@ -1476,7 +1476,7 @@ function Margin4() {
 
 function Component39() {
   return (
-    <a className="absolute aspect-[151.74/151.74] block cursor-pointer left-0 overflow-clip right-0 top-0" data-name="Component 1" href="https://fouanistore.com/product/617">
+    <a className="absolute aspect-[151.74/151.74] block cursor-pointer left-0 overflow-clip right-0 top-0" data-name="Component 1" href="https://grandpestore.com/product/617">
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
         <img alt="" className="absolute left-0 max-w-none size-[99.99%] top-0" src={imgComponent5} />
       </div>
@@ -1771,7 +1771,7 @@ function Margin7() {
 
 function Component43() {
   return (
-    <a className="absolute aspect-[151.73/151.74] block cursor-pointer left-0 overflow-clip right-0 top-0" data-name="Component 1" href="https://fouanistore.com/product/551">
+    <a className="absolute aspect-[151.73/151.74] block cursor-pointer left-0 overflow-clip right-0 top-0" data-name="Component 1" href="https://grandpestore.com/product/551">
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
         <img alt="" className="absolute h-[99.99%] left-0 max-w-none top-0 w-full" src={imgComponent7} />
       </div>
@@ -1824,7 +1824,7 @@ function Margin8() {
 
 function Component44() {
   return (
-    <a className="absolute aspect-[151.73/151.74] block cursor-pointer left-0 overflow-clip right-0 top-0" data-name="Component 1" href="https://fouanistore.com/product/693">
+    <a className="absolute aspect-[151.73/151.74] block cursor-pointer left-0 overflow-clip right-0 top-0" data-name="Component 1" href="https://grandpestore.com/product/693">
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
         <img alt="" className="absolute h-[99.99%] left-0 max-w-none top-0 w-full" src={imgComponent8} />
       </div>
@@ -1877,7 +1877,7 @@ function Margin9() {
 
 function Component45() {
   return (
-    <a className="absolute aspect-[151.74/151.74] block cursor-pointer left-0 overflow-clip right-0 top-0" data-name="Component 1" href="https://fouanistore.com/product/494">
+    <a className="absolute aspect-[151.74/151.74] block cursor-pointer left-0 overflow-clip right-0 top-0" data-name="Component 1" href="https://grandpestore.com/product/494">
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
         <img alt="" className="absolute left-0 max-w-none size-[99.99%] top-0" src={imgComponent9} />
       </div>
@@ -2090,7 +2090,7 @@ function Component16() {
       <div aria-hidden="true" className="absolute border border-[#7e7576] border-solid inset-0 pointer-events-none rounded-[9999px]" />
       <div className="flex flex-col items-center size-full">
         <div className="content-stretch flex flex-col items-center px-[22px] py-[8px] relative w-full">
-          <a className="flex flex-col font-['Poppins:Regular',sans-serif] justify-center leading-[0] not-italic relative shrink-0 text-[#1b1b1b] text-[16px] text-center text-nowrap tracking-[0.5px]" href="https://fouanistore.com/product/867">
+          <a className="flex flex-col font-['Poppins:Regular',sans-serif] justify-center leading-[0] not-italic relative shrink-0 text-[#1b1b1b] text-[16px] text-center text-nowrap tracking-[0.5px]" href="https://grandpestore.com/product/867">
             <p className="cursor-pointer leading-[24px]">View Product</p>
           </a>
         </div>
@@ -2149,7 +2149,7 @@ function Container84() {
     <div className="content-stretch flex flex-col items-start justify-between px-0 py-[21px] relative shrink-0 w-full" data-name="Container">
       <div className="h-[28px] shrink-0 w-full" data-name="Heading 2" />
       <div className="h-[40px] shrink-0 w-full" data-name="Heading 2" />
-      <a className="block cursor-pointer h-[40px] relative rounded-[9999px] shrink-0 w-full" data-name="Link" href="https://fouanistore.com/product/444">
+      <a className="block cursor-pointer h-[40px] relative rounded-[9999px] shrink-0 w-full" data-name="Link" href="https://grandpestore.com/product/444">
         <div aria-hidden="true" className="absolute border border-[#7e7576] border-solid inset-0 pointer-events-none rounded-[9999px]" />
       </a>
     </div>
@@ -2169,7 +2169,7 @@ function Container86() {
     <div className="content-stretch flex flex-col items-start justify-between px-0 py-[21px] relative shrink-0 w-full" data-name="Container">
       <div className="h-[28px] shrink-0 w-full" data-name="Heading 2" />
       <div className="h-[60px] shrink-0 w-full" data-name="Heading 2" />
-      <a className="block cursor-pointer h-[40px] relative rounded-[9999px] shrink-0 w-full" data-name="Link" href="https://fouanistore.com/product/782">
+      <a className="block cursor-pointer h-[40px] relative rounded-[9999px] shrink-0 w-full" data-name="Link" href="https://grandpestore.com/product/782">
         <div aria-hidden="true" className="absolute border border-[#7e7576] border-solid inset-0 pointer-events-none rounded-[9999px]" />
       </a>
     </div>
@@ -2189,7 +2189,7 @@ function Container88() {
     <div className="content-stretch flex flex-col items-start justify-between px-0 py-[21px] relative shrink-0 w-full" data-name="Container">
       <div className="h-[28px] shrink-0 w-full" data-name="Heading 2" />
       <div className="h-[40px] shrink-0 w-full" data-name="Heading 2" />
-      <a className="block cursor-pointer h-[40px] relative rounded-[9999px] shrink-0 w-full" data-name="Link" href="https://fouanistore.com/product/784">
+      <a className="block cursor-pointer h-[40px] relative rounded-[9999px] shrink-0 w-full" data-name="Link" href="https://grandpestore.com/product/784">
         <div aria-hidden="true" className="absolute border border-[#7e7576] border-solid inset-0 pointer-events-none rounded-[9999px]" />
       </a>
     </div>
@@ -2209,7 +2209,7 @@ function Container90() {
     <div className="content-stretch flex flex-col items-start justify-between px-0 py-[21px] relative shrink-0 w-full" data-name="Container">
       <div className="h-[28px] shrink-0 w-full" data-name="Heading 2" />
       <div className="h-[40px] shrink-0 w-full" data-name="Heading 2" />
-      <a className="block cursor-pointer h-[40px] relative rounded-[9999px] shrink-0 w-full" data-name="Link" href="https://fouanistore.com/product/104">
+      <a className="block cursor-pointer h-[40px] relative rounded-[9999px] shrink-0 w-full" data-name="Link" href="https://grandpestore.com/product/104">
         <div aria-hidden="true" className="absolute border border-[#7e7576] border-solid inset-0 pointer-events-none rounded-[9999px]" />
       </a>
     </div>
@@ -2229,7 +2229,7 @@ function Container92() {
     <div className="content-stretch flex flex-col items-start justify-between px-0 py-[21px] relative shrink-0 w-full" data-name="Container">
       <div className="h-[28px] shrink-0 w-full" data-name="Heading 2" />
       <div className="h-[40px] shrink-0 w-full" data-name="Heading 2" />
-      <a className="block cursor-pointer h-[40px] relative rounded-[9999px] shrink-0 w-full" data-name="Link" href="https://fouanistore.com/product/101">
+      <a className="block cursor-pointer h-[40px] relative rounded-[9999px] shrink-0 w-full" data-name="Link" href="https://grandpestore.com/product/101">
         <div aria-hidden="true" className="absolute border border-[#7e7576] border-solid inset-0 pointer-events-none rounded-[9999px]" />
       </a>
     </div>
@@ -2249,7 +2249,7 @@ function Container94() {
     <div className="content-stretch flex flex-col items-start justify-between px-0 py-[21px] relative shrink-0 w-full" data-name="Container">
       <div className="h-[28px] shrink-0 w-full" data-name="Heading 2" />
       <div className="h-[40px] shrink-0 w-full" data-name="Heading 2" />
-      <a className="block cursor-pointer h-[40px] relative rounded-[9999px] shrink-0 w-full" data-name="Link" href="https://fouanistore.com/product/160">
+      <a className="block cursor-pointer h-[40px] relative rounded-[9999px] shrink-0 w-full" data-name="Link" href="https://grandpestore.com/product/160">
         <div aria-hidden="true" className="absolute border border-[#7e7576] border-solid inset-0 pointer-events-none rounded-[9999px]" />
       </a>
     </div>
@@ -2287,7 +2287,7 @@ function Container98() {
     <div className="content-stretch flex flex-col items-start justify-between px-0 py-[21px] relative shrink-0 w-full" data-name="Container">
       <div className="h-[28px] shrink-0 w-full" data-name="Heading 2" />
       <div className="h-[40px] shrink-0 w-full" data-name="Heading 2" />
-      <a className="block cursor-pointer h-[40px] relative rounded-[9999px] shrink-0 w-full" data-name="Link" href="https://fouanistore.com/product/759">
+      <a className="block cursor-pointer h-[40px] relative rounded-[9999px] shrink-0 w-full" data-name="Link" href="https://grandpestore.com/product/759">
         <div aria-hidden="true" className="absolute border border-[#7e7576] border-solid inset-0 pointer-events-none rounded-[9999px]" />
       </a>
     </div>
@@ -2307,7 +2307,7 @@ function Container100() {
     <div className="content-stretch flex flex-col items-start justify-between px-0 py-[21px] relative shrink-0 w-full" data-name="Container">
       <div className="h-[28px] shrink-0 w-full" data-name="Heading 2" />
       <div className="h-[40px] shrink-0 w-full" data-name="Heading 2" />
-      <a className="block cursor-pointer h-[40px] relative rounded-[9999px] shrink-0 w-full" data-name="Link" href="https://fouanistore.com/product/957">
+      <a className="block cursor-pointer h-[40px] relative rounded-[9999px] shrink-0 w-full" data-name="Link" href="https://grandpestore.com/product/957">
         <div aria-hidden="true" className="absolute border border-[#7e7576] border-solid inset-0 pointer-events-none rounded-[9999px]" />
       </a>
     </div>
@@ -2327,7 +2327,7 @@ function Container102() {
     <div className="content-stretch flex flex-col items-start justify-between px-0 py-[21px] relative shrink-0 w-full" data-name="Container">
       <div className="h-[28px] shrink-0 w-full" data-name="Heading 2" />
       <div className="h-[40px] shrink-0 w-full" data-name="Heading 2" />
-      <a className="block cursor-pointer h-[40px] relative rounded-[9999px] shrink-0 w-full" data-name="Link" href="https://fouanistore.com/product/736">
+      <a className="block cursor-pointer h-[40px] relative rounded-[9999px] shrink-0 w-full" data-name="Link" href="https://grandpestore.com/product/736">
         <div aria-hidden="true" className="absolute border border-[#7e7576] border-solid inset-0 pointer-events-none rounded-[9999px]" />
       </a>
     </div>
@@ -2537,7 +2537,7 @@ function Margin12() {
 
 function Component51() {
   return (
-    <a className="absolute aspect-[151.73/151.73] block cursor-pointer left-0 overflow-clip right-0 top-0" data-name="Component 1" href="https://fouanistore.com/product/258">
+    <a className="absolute aspect-[151.73/151.73] block cursor-pointer left-0 overflow-clip right-0 top-0" data-name="Component 1" href="https://grandpestore.com/product/258">
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
         <img alt="" className="absolute left-0 max-w-none size-full top-0" src={imgComponent27} />
       </div>
@@ -2590,7 +2590,7 @@ function Margin13() {
 
 function Component52() {
   return (
-    <a className="absolute aspect-[151.73/151.73] block cursor-pointer left-0 overflow-clip right-0 top-0" data-name="Component 1" href="https://fouanistore.com/product/330">
+    <a className="absolute aspect-[151.73/151.73] block cursor-pointer left-0 overflow-clip right-0 top-0" data-name="Component 1" href="https://grandpestore.com/product/330">
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
         <img alt="" className="absolute left-0 max-w-none size-full top-0" src={imgComponent28} />
       </div>
@@ -2653,7 +2653,7 @@ function OutOfStock() {
 
 function Component53() {
   return (
-    <a className="absolute aspect-[151.74/151.73] block cursor-pointer left-0 overflow-clip right-0 top-0" data-name="Component 1" href="https://fouanistore.com/product/671">
+    <a className="absolute aspect-[151.74/151.73] block cursor-pointer left-0 overflow-clip right-0 top-0" data-name="Component 1" href="https://grandpestore.com/product/671">
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
         <img alt="" className="absolute h-full left-0 max-w-none top-0 w-[99.99%]" src={imgComponent29} />
       </div>
@@ -3068,7 +3068,7 @@ function Container143() {
   return (
     <div className="content-stretch flex flex-col items-start relative shrink-0" data-name="Container">
       <div className="flex flex-col font-['Poppins:Regular',sans-serif] justify-center leading-[0] not-italic relative shrink-0 text-[14px] text-black text-left text-nowrap" role="link" tabIndex="0">
-        <p className="cursor-pointer leading-[21px]">online@fouani.com</p>
+        <p className="cursor-pointer leading-[21px]">online@grandpe.com</p>
       </div>
     </div>
   );
@@ -3076,7 +3076,7 @@ function Container143() {
 
 function Component14() {
   return (
-    <a className="content-stretch cursor-pointer flex gap-[10.5px] items-center p-0 relative shrink-0 w-full" data-name="Component 17" href="mailto:online@fouani.com">
+    <a className="content-stretch cursor-pointer flex gap-[10.5px] items-center p-0 relative shrink-0 w-full" data-name="Component 17" href="mailto:online@grandpe.com">
       <Container142 />
       <Container143 />
     </a>
@@ -3150,7 +3150,7 @@ function Container147() {
 function Component15() {
   return (
     <div className="content-stretch flex flex-col items-start relative shrink-0" data-name="Component 18">
-      <a className="flex flex-col font-['Poppins:Regular',sans-serif] justify-center leading-[0] not-italic relative shrink-0 text-[14px] text-black text-nowrap" href="https://fouanistore.com/privacy-policy">
+      <a className="flex flex-col font-['Poppins:Regular',sans-serif] justify-center leading-[0] not-italic relative shrink-0 text-[14px] text-black text-nowrap" href="https://grandpestore.com/privacy-policy">
         <p className="cursor-pointer leading-[21px]">Privacy Policy</p>
       </a>
     </div>
@@ -3160,7 +3160,7 @@ function Component15() {
 function Component60() {
   return (
     <div className="content-stretch flex flex-col items-start relative shrink-0" data-name="Component 18">
-      <a className="flex flex-col font-['Poppins:Regular',sans-serif] justify-center leading-[0] not-italic relative shrink-0 text-[0px] text-black text-nowrap" href="https://fouanistore.com/privacy-policy">
+      <a className="flex flex-col font-['Poppins:Regular',sans-serif] justify-center leading-[0] not-italic relative shrink-0 text-[0px] text-black text-nowrap" href="https://grandpestore.com/privacy-policy">
         <p className="cursor-pointer leading-[21px] text-[14px]" role="link" tabIndex="0">{`Terms & Conditions`}</p>
       </a>
     </div>
@@ -3183,7 +3183,7 @@ function HorizontalBorder() {
     <div className="content-stretch flex flex-col items-center justify-between pb-0 pt-[29px] px-0 relative shrink-0 w-full" data-name="HorizontalBorder">
       <div aria-hidden="true" className="absolute border-[1px_0px_0px] border-[rgba(0,0,0,0.1)] border-solid inset-0 pointer-events-none" />
       <div className="flex flex-col font-['Poppins:Regular',sans-serif] justify-center leading-[0] not-italic relative shrink-0 text-[14px] text-black text-center text-nowrap">
-        <p className="leading-[21px]">© 2025 fouani. All rights reserved</p>
+        <p className="leading-[21px]">© 2025 grandpe. All rights reserved</p>
       </div>
       <Container148 />
     </div>
@@ -3242,7 +3242,7 @@ function Background21() {
 
 function Component17() {
   return (
-    <a className="absolute bg-[#e61b42] bottom-[6082.29px] content-stretch cursor-pointer flex h-[49px] items-center justify-center overflow-clip p-0 right-[17.5px] rounded-[10.5px] shadow-[0px_25px_50px_-12px_rgba(0,0,0,0.25)] w-[56px]" data-name="Component 20" href="https://fouanistore.com/checkout/cart">
+    <a className="absolute bg-[#e61b42] bottom-[6082.29px] content-stretch cursor-pointer flex h-[49px] items-center justify-center overflow-clip p-0 right-[17.5px] rounded-[10.5px] shadow-[0px_25px_50px_-12px_rgba(0,0,0,0.25)] w-[56px]" data-name="Component 20" href="https://grandpestore.com/checkout/cart">
       <Component61 />
       <Background21 />
     </a>
@@ -3277,11 +3277,11 @@ function MobileMenu({ isOpen, onClose }: { isOpen: boolean; onClose: () => void 
             </svg>
           </button>
           <nav className="flex flex-col gap-4">
-            <a href="https://fouanistore.com/" className="text-lg font-medium text-gray-900 hover:text-[#e61b42] py-2">Home</a>
-            <a href="https://fouanistore.com/search" className="text-lg font-medium text-gray-900 hover:text-[#e61b42] py-2">Products</a>
-            <a href="https://fouanistore.com/showrooms/showrooms-map" className="text-lg font-medium text-gray-900 hover:text-[#e61b42] py-2">Showrooms</a>
-            <a href="https://fouanistore.com/account/login" className="text-lg font-medium text-gray-900 hover:text-[#e61b42] py-2">Account</a>
-            <a href="https://fouanistore.com/checkout/cart" className="text-lg font-medium text-gray-900 hover:text-[#e61b42] py-2">Cart</a>
+            <a href="https://grandpestore.com/" className="text-lg font-medium text-gray-900 hover:text-[#e61b42] py-2">Home</a>
+            <a href="https://grandpestore.com/search" className="text-lg font-medium text-gray-900 hover:text-[#e61b42] py-2">Products</a>
+            <a href="https://grandpestore.com/showrooms/showrooms-map" className="text-lg font-medium text-gray-900 hover:text-[#e61b42] py-2">Showrooms</a>
+            <a href="https://grandpestore.com/account/login" className="text-lg font-medium text-gray-900 hover:text-[#e61b42] py-2">Account</a>
+            <a href="https://grandpestore.com/checkout/cart" className="text-lg font-medium text-gray-900 hover:text-[#e61b42] py-2">Cart</a>
           </nav>
         </div>
       </div>

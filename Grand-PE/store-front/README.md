@@ -1,7 +1,8 @@
 
   # Replicate Web Page Design
 
-  This is a code bundle for Replicate Web Page Design. The original project is available at https://www.figma.com/design/p3pfFuPEvzmqKecIWZaLve/Replicate-Web-Page-Design.
+  This is GrandPE e-commerce Solar Sales and Installation
+  Sales of Power Tank and more
 
   ## Running the code
 
