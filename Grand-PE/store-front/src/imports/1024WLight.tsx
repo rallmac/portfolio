@@ -4,54 +4,54 @@ import clsx from "clsx";
 import imgComponent1 from "figma:asset/grand_pe_logo.png";
 import imgComponent2 from "figma:asset/3fd8bc06a8a2066c542e2f13af8895b41baa0840.png";
 import imgComponent11 from "figma:asset/9cd90e9d09ab540087f7330bd8758c42b6882d87.png";
-import imgComponent12 from "figma:asset/a81a9ed74f723406ef773c9c17cfc82c00e98443.png";
+import imgComponent12 from "figma:asset/refrigerator1.png";
 import imgComponent13 from "figma:asset/3f0e1b93902d9df30707d17e10d48ac11b67fa86.png";
-import imgComponent14 from "figma:asset/685fba18eecfb5390bd0740b19e80edce771006b.png";
-import imgComponent15 from "figma:asset/f27ac1827be94fa7d1200a212f148c0661ead078.png";
-import imgComponent16 from "figma:asset/ab77d5262e099dfd69c93600cb8771ffbbd42f01.png";
+import imgComponent14 from "figma:asset/tv1.png";
+import imgComponent15 from "figma:asset/hisense2.png";
+import imgComponent16 from "figma:asset/appliances1.png";
 import imgComponent17 from "figma:asset/4f4404acb89936f8eef7c17c8b4d5c4bcc7645de.png";
-import imgComponent18 from "figma:asset/0599001e48a883065fa05637c7fae5cdae1b7f37.png";
-import imgContainer from "figma:asset/dd2df41530434745c703c7c26c3186f761b1782e.png";
-import imgDocMp4 from "figma:asset/f1e193635d529c4eae5c8b465e8019bba9df7b5c.png";
-import imgComponent19 from "figma:asset/458293a6097b0e1beaaf8ef570157cb5921205c7.png";
+import imgComponent18 from "figma:asset/furnitures1.png";
+import imgContainer from "figma:asset/lg1.png";
+import imgDocMp4 from "figma:asset/video.png";
+import imgComponent19 from "figma:asset/lg6.png";
 import imgComponent20 from "figma:asset/59d577d0f8136d21c9e38156c47c122d0a23f421.png";
-import imgComponent21 from "figma:asset/69feac5ad763b36e5a6588205394ffe7cf4887c0.png";
-import imgComponent22 from "figma:asset/c36a3607f6507ab82fef8ac2d41b35be895b69bd.png";
-import imgComponent23 from "figma:asset/de8e4b6b04eb7f658de5f1df6d6be90847f56477.png";
+import imgComponent21 from "figma:asset/maxi8.png";
+import imgComponent22 from "figma:asset/huawei1.png";
+import imgComponent23 from "figma:asset/growatt1.png";
 import imgComponent24 from "figma:asset/8c8045af4b759a818af5f51e651dfb92fb2b6d59.png";
 import imgComponent25 from "figma:asset/2a5eab5e34c01a28c8c04d3e3a0eba2f0813c31e.png";
-import imgComponent26 from "figma:asset/e0857b218893a31ca39334cfe757455ca66e927c.png";
-import imgContainer1 from "figma:asset/65431107cd3051cc22db64e71f4998f8e26b8e8e.png";
+import imgComponent26 from "figma:asset/actiu1.png";
+import imgContainer1 from "figma:asset/hisense9.png";
 import imgContainer2 from "figma:asset/09d8b9bf16719e6be3cd121a4fb533ed636e1a72.png";
-import img202 from "figma:asset/b4d4b348899b9c02822456714c05a3c39dc5d0aa.png";
-import img617 from "figma:asset/c3020da62e365ff8ea532e08895c0bf5c1665700.png";
-import imgComponent3 from "figma:asset/334fc2ac9d2930db4853a6063440804bf3bc5aa6.png";
+import img202 from "figma:asset/hisense7.png";
+import img617 from "figma:asset/hisense5.png";
+import imgComponent3 from "figma:asset/lg9.png";
 import img809 from "figma:asset/2fdab343078e142361ed23c7840b03975f583dac.png";
 import imgOutOfStock from "figma:asset/out_of_stock_label.png";
-import img366 from "figma:asset/44987d19b802cba50f035e899f8039c4ed4e0be9.png";
-import img542 from "figma:asset/c5a9deb96a7caf70a3ffc5e4033f707c67ceb0c0.png";
-import img784 from "figma:asset/63a2f159fedaa61707b8da5c402ce18f28e96583.png";
-import img130 from "figma:asset/d1675d559ab76e21b6f5a6e720dcac638eeb9783.png";
-import imgComponent4 from "figma:asset/294e81ec71ef1a8b9717b045d91552008e641f92.png";
+import img366 from "figma:asset/maxi7.png";
+import img542 from "figma:asset/lg5.png";
+import img784 from "figma:asset/lg10.png";
+import img130 from "figma:asset/hisense3.png";
+import imgComponent4 from "figma:asset/hisense10.png";
 import img693 from "figma:asset/01be07ff8e56436c29a351ab3a35a6ad9e7e9b32.png";
-import img494 from "figma:asset/92aed4d80f5b8d71403fee4243d4a3be217c39c7.png";
-import img512 from "figma:asset/86fa502209b2292c5f5e4ecf3d104a006e9bc4db.png";
-import img495 from "figma:asset/069d8fec720d03e49f95b80686cd2f0a6c8c1b78.png";
-import img554 from "figma:asset/e04a09b71e765f90691ad390a5237ab08ef79e2e.png";
-import img688 from "figma:asset/b44e38610498a35326013d4ada540fc05543fef4.png";
-import img792 from "figma:asset/a63c47fb33804596d86dce0e19fea05a8c8d3634.png";
-import imgLgfs25Q2Yb0 from "figma:asset/c6ec29864e1232e658979f8e7a072d60b84f20db.png";
-import imgLgSplitAc from "figma:asset/24705ed00e17bd0c1a8f7ce68770d553fd6b7387.png";
-import imgLgfs3Hpinverter from "figma:asset/d16d6563fd56df75412e7640e55e5325e18cda30.png";
-import imgComponent5 from "figma:asset/d983a3a0dfdc1cfaa929a7cf789405c777e10995.png";
-import img330 from "figma:asset/71c532405fc6ab2f1b5a48a17a4364aab54fbc5e.png";
-import img671 from "figma:asset/c94712801b42abd1c39f311b8bffdec548919b19.png";
-import img703 from "figma:asset/b11cec3ebf08cfba1d8a31a0dfa94f98f808b169.png";
-import img706 from "figma:asset/a6f9acb67f9d94a185d10898ccfc8e60d85d1d3c.png";
-import img300 from "figma:asset/d2c87bbe784524ba2e995bb7e686537047256234.png";
-import img257 from "figma:asset/a26948d913c392b30e016b40a6f75e6cfe649bd1.png";
-import img265 from "figma:asset/ed17ecb08fe72a92d4c3baeb305f75537bb00c7f.png";
-import img681 from "figma:asset/67c9e077802eaef749a725625d7b2012bef989e8.png";
+import img494 from "figma:asset/huawei2.png";
+import img512 from "figma:asset/huawei3.png";
+import img495 from "figma:asset/huawei4.png";
+import img554 from "figma:asset/pylontech1.png";
+import img688 from "figma:asset/deye1.png";
+import img792 from "figma:asset/deye2.png";
+import imgLgfs25Q2Yb0 from "figma:asset/lg4.png";
+import imgLgSplitAc from "figma:asset/lg7.png";
+import imgLgfs3Hpinverter from "figma:asset/lg3.png";
+import imgComponent5 from "figma:asset/lg2.png";
+import img330 from "figma:asset/hisense11.png";
+import img671 from "figma:asset/hisense4.png";
+import img703 from "figma:asset/maxi4.png";
+import img706 from "figma:asset/maxi6.png";
+import img300 from "figma:asset/maxi3.png";
+import img257 from "figma:asset/maxi5.png";
+import img265 from "figma:asset/maxi1.png";
+import img681 from "figma:asset/maxi9.png";
 import imgComponent6 from "figma:asset/2c25ec080f0423dd7f25b08ecd32261bedb5d65a.png";
 
 function BackgroundBackgroundImage({ children }: React.PropsWithChildren<{}>) {
@@ -666,7 +666,7 @@ function Container9() {
       <ComponentBackgroundImageAndText text="Cookers/Microwave" />
       <ComponentBackgroundImageAndText text="Small Appliances/Fans" />
       <ComponentBackgroundImageAndText text="Power Solution" />
-      <ComponentBackgroundImageAndText text="Furnitures" />
+      <ComponentBackgroundImageAndText text="furnitures1" />
       <ComponentBackgroundImageAndText text="Others" />
     </div>
   );
@@ -1003,7 +1003,7 @@ function Component29() {
 function Background9() {
   return (
     <BackgroundBackgroundImage>
-      <ContainerBackgroundImageAndText text="Furnitures" />
+      <ContainerBackgroundImageAndText text="furnitures1" />
     </BackgroundBackgroundImage>
   );
 }
@@ -1316,7 +1316,7 @@ function Component35() {
 function Background15() {
   return (
     <BackgroundBackgroundImage>
-      <ContainerBackgroundImageAndText text="Growatt" />
+      <ContainerBackgroundImageAndText text="growatt" />
     </BackgroundBackgroundImage>
   );
 }
@@ -2335,7 +2335,7 @@ function Container86() {
 function Container87() {
   return (
     <div className="basis-0 grow min-h-px min-w-px relative shrink-0 w-full" data-name="Container">
-      <HeadingBackgroundImage text="Growatt Low" text1="Voltage…" />
+      <HeadingBackgroundImage text="growatt Low" text1="Voltage…" />
       <Component52 />
       <Container86 />
       <ComponentBackgroundImageAndText1 text="Add To Cart" />
@@ -4254,7 +4254,7 @@ function Item10() {
 function Item11() {
   return (
     <div className="content-stretch flex flex-col items-start pb-px pt-0 px-0 relative shrink-0 w-full" data-name="Item">
-      <ComponentBackgroundImageAndText3 text="Growatt" />
+      <ComponentBackgroundImageAndText3 text="growatt" />
     </div>
   );
 }

@@ -5,38 +5,38 @@ import clsx from "clsx";
 import imgComponent1 from "figma:asset/grand_pe_logo.png";
 import imgComponent2 from "figma:asset/3fd0f8d0e8cb4e879d99f298bd07ac85a38f1aad.png";
 import imgComponent11 from "figma:asset/9cd90e9d09ab540087f7330bd8758c42b6882d87.png";
-import imgComponent12 from "figma:asset/a81a9ed74f723406ef773c9c17cfc82c00e98443.png";
+import imgComponent12 from "figma:asset/refrigerator1.png";
 import imgComponent13 from "figma:asset/3f0e1b93902d9df30707d17e10d48ac11b67fa86.png";
-import imgComponent14 from "figma:asset/685fba18eecfb5390bd0740b19e80edce771006b.png";
-import imgComponent15 from "figma:asset/f27ac1827be94fa7d1200a212f148c0661ead078.png";
-import imgComponent16 from "figma:asset/ab77d5262e099dfd69c93600cb8771ffbbd42f01.png";
+import imgComponent14 from "figma:asset/tv1.png";
+import imgComponent15 from "figma:asset/hisense2.png";
+import imgComponent16 from "figma:asset/appliances1.png";
 import imgComponent17 from "figma:asset/4f4404acb89936f8eef7c17c8b4d5c4bcc7645de.png";
-import imgComponent18 from "figma:asset/0599001e48a883065fa05637c7fae5cdae1b7f37.png";
-import imgContainer from "figma:asset/dd2df41530434745c703c7c26c3186f761b1782e.png";
-import imgDocMp4 from "figma:asset/f1e193635d529c4eae5c8b465e8019bba9df7b5c.png";
-import imgComponent19 from "figma:asset/458293a6097b0e1beaaf8ef570157cb5921205c7.png";
+import imgComponent18 from "figma:asset/furnitures1.png";
+import imgContainer from "figma:asset/lg1.png";
+import imgDocMp4 from "figma:asset/video.png";
+import imgComponent19 from "figma:asset/lg6.png";
 import imgComponent20 from "figma:asset/59d577d0f8136d21c9e38156c47c122d0a23f421.png";
-import imgComponent21 from "figma:asset/69feac5ad763b36e5a6588205394ffe7cf4887c0.png";
-import imgComponent22 from "figma:asset/c36a3607f6507ab82fef8ac2d41b35be895b69bd.png";
-import imgComponent23 from "figma:asset/de8e4b6b04eb7f658de5f1df6d6be90847f56477.png";
+import imgComponent21 from "figma:asset/maxi8.png";
+import imgComponent22 from "figma:asset/huawei1.png";
+import imgComponent23 from "figma:asset/growatt1.png";
 import imgComponent24 from "figma:asset/8c8045af4b759a818af5f51e651dfb92fb2b6d59.png";
 import imgComponent25 from "figma:asset/2a5eab5e34c01a28c8c04d3e3a0eba2f0813c31e.png";
-import imgComponent26 from "figma:asset/e0857b218893a31ca39334cfe757455ca66e927c.png";
-import imgContainer1 from "figma:asset/65431107cd3051cc22db64e71f4998f8e26b8e8e.png";
+import imgComponent26 from "figma:asset/actiu1.png";
+import imgContainer1 from "figma:asset/hisense9.png";
 import imgComponent3 from "figma:asset/5b5b979c73806392280d2bf469781da394e246f9.png";
-import imgComponent4 from "figma:asset/b4d4b348899b9c02822456714c05a3c39dc5d0aa.png";
-import imgComponent5 from "figma:asset/a89ecf6c87d8aba9cd9ebaede0286743ef957177.png";
-import imgComponent6 from "figma:asset/b27dafedf9bcef82c65e2cceadfdda06cce82052.png";
-import imgComponent7 from "figma:asset/a13e42d27638c5fee0463bce7bdb34a6ff800932.png";
+import imgComponent4 from "figma:asset/hisense7.png";
+import imgComponent5 from "figma:asset/hisense8.png";
+import imgComponent6 from "figma:asset/hisense6.png";
+import imgComponent7 from "figma:asset/growatt1.png";
 import imgComponent8 from "figma:asset/2f3f2e7192ab27121e603c47d1224045b881ae64.png";
 import imgComponent9 from "figma:asset/6ae17ddf838acfc7ebfbf86154cfeab80d7b2ac4.png";
 import imgContainer2 from "figma:asset/0f3e28460737a81127d4d6a4af70bed2944ece16.png";
-import imgComponent10 from "figma:asset/f8918455692e19658363b3856539697cfe8322a1.png";
-import imgComponent27 from "figma:asset/d4b2f4c519026c49b2264d09dcddf4f430623fbf.png";
-import imgComponent28 from "figma:asset/f7792e67ec88c9e81ab890442afe41f5b82cfb44.png";
+import imgComponent10 from "figma:asset/lg_banner1.png";
+import imgComponent27 from "figma:asset/maxi2.png";
+import imgComponent28 from "figma:asset/hisense1.png";
 import imgOutOfStock from "figma:asset/out_of_stock_label.png";
 import imgComponent29 from "figma:asset/046e33f576771f1529a0a0515157f6b383ee7671.png";
-import imgComponent30 from "figma:asset/695d3aad62dde54dad7f4cc0b8d82e41be829ba1.png";
+import imgComponent30 from "figma:asset/whatsapp1.png";
 
 function BackgroundBackgroundImage({ children }: React.PropsWithChildren<{}>) {
   return (
@@ -762,7 +762,7 @@ function Component24() {
 function Background9() {
   return (
     <BackgroundBackgroundImage>
-      <ContainerBackgroundImageAndText text="Furnitures" />
+      <ContainerBackgroundImageAndText text="furnitures1" />
     </BackgroundBackgroundImage>
   );
 }
@@ -1080,7 +1080,7 @@ function Component30() {
 function Background15() {
   return (
     <BackgroundBackgroundImage>
-      <ContainerBackgroundImageAndText text="Growatt" />
+      <ContainerBackgroundImageAndText text="growatt" />
     </BackgroundBackgroundImage>
   );
 }
@@ -1797,7 +1797,7 @@ function Container62() {
 function Container63() {
   return (
     <div className="basis-0 grow min-h-px min-w-px relative shrink-0 w-full" data-name="Container">
-      <HeadingBackgroundImage text="Growatt Hybrid" text1="Inverter SPF | ES…" additionalClassNames="top-[151.74px]" />
+      <HeadingBackgroundImage text="growatt Hybrid" text1="Inverter SPF | ES…" additionalClassNames="top-[151.74px]" />
       <Component43 />
       <Container62 />
       <ComponentBackgroundImageAndText text="Add To Cart" additionalClassNames="top-[248.74px]" />
@@ -1850,7 +1850,7 @@ function Container66() {
 function Container67() {
   return (
     <div className="basis-0 grow min-h-px min-w-px relative shrink-0 w-full" data-name="Container">
-      <HeadingBackgroundImage text="Growatt Low Voltage" text1="LiFePO4 Battery…" additionalClassNames="top-[151.74px]" />
+      <HeadingBackgroundImage text="growatt Low Voltage" text1="LiFePO4 Battery…" additionalClassNames="top-[151.74px]" />
       <Component44 />
       <Container66 />
       <ComponentBackgroundImageAndText text="Add To Cart" additionalClassNames="top-[248.74px]" />
@@ -3005,7 +3005,7 @@ function Item10() {
 function Item11() {
   return (
     <div className="content-stretch flex flex-col items-start pb-px pt-0 px-0 relative shrink-0 w-full" data-name="Item">
-      <ComponentBackgroundImageAndText1 text="Growatt" />
+      <ComponentBackgroundImageAndText1 text="growatt" />
     </div>
   );
 }
