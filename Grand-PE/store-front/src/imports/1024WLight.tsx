@@ -2,38 +2,38 @@ import svgPaths from "./svg-xjnje6jz6t";
 import { useRef } from "react";
 import clsx from "clsx";
 import imgComponent1 from "figma:asset/grand_pe_logo.png";
-import imgComponent2 from "figma:asset/3fd8bc06a8a2066c542e2f13af8895b41baa0840.png";
-import imgComponent11 from "figma:asset/9cd90e9d09ab540087f7330bd8758c42b6882d87.png";
+import imgComponent2 from "figma:asset/christmas_banner3.png";
+import imgComponent11 from "figma:asset/audio1.png";
 import imgComponent12 from "figma:asset/refrigerator1.png";
-import imgComponent13 from "figma:asset/3f0e1b93902d9df30707d17e10d48ac11b67fa86.png";
+import imgComponent13 from "figma:asset/washing_machines.png";
 import imgComponent14 from "figma:asset/tv1.png";
 import imgComponent15 from "figma:asset/hisense2.png";
 import imgComponent16 from "figma:asset/appliances1.png";
-import imgComponent17 from "figma:asset/4f4404acb89936f8eef7c17c8b4d5c4bcc7645de.png";
+import imgComponent17 from "figma:asset/power_solution1.png";
 import imgComponent18 from "figma:asset/furnitures1.png";
 import imgContainer from "figma:asset/lg1.png";
 import imgDocMp4 from "figma:asset/video.png";
 import imgComponent19 from "figma:asset/lg6.png";
-import imgComponent20 from "figma:asset/59d577d0f8136d21c9e38156c47c122d0a23f421.png";
+import imgComponent20 from "figma:asset/hisense12.png";
 import imgComponent21 from "figma:asset/maxi8.png";
 import imgComponent22 from "figma:asset/huawei1.png";
 import imgComponent23 from "figma:asset/growatt1.png";
-import imgComponent24 from "figma:asset/8c8045af4b759a818af5f51e651dfb92fb2b6d59.png";
-import imgComponent25 from "figma:asset/2a5eab5e34c01a28c8c04d3e3a0eba2f0813c31e.png";
+import imgComponent24 from "figma:asset/jinko.png";
+import imgComponent25 from "figma:asset/deye3.png";
 import imgComponent26 from "figma:asset/actiu1.png";
 import imgContainer1 from "figma:asset/hisense9.png";
-import imgContainer2 from "figma:asset/09d8b9bf16719e6be3cd121a4fb533ed636e1a72.png";
+import imgContainer2 from "figma:asset/lg12.png";
 import img202 from "figma:asset/hisense7.png";
 import img617 from "figma:asset/hisense5.png";
 import imgComponent3 from "figma:asset/lg9.png";
-import img809 from "figma:asset/2fdab343078e142361ed23c7840b03975f583dac.png";
+import img809 from "figma:asset/lg14.png";
 import imgOutOfStock from "figma:asset/out_of_stock_label.png";
 import img366 from "figma:asset/maxi7.png";
 import img542 from "figma:asset/lg5.png";
 import img784 from "figma:asset/lg10.png";
 import img130 from "figma:asset/hisense3.png";
 import imgComponent4 from "figma:asset/hisense10.png";
-import img693 from "figma:asset/01be07ff8e56436c29a351ab3a35a6ad9e7e9b32.png";
+import img693 from "figma:asset/hisense11.png";
 import img494 from "figma:asset/huawei2.png";
 import img512 from "figma:asset/huawei3.png";
 import img495 from "figma:asset/huawei4.png";
@@ -52,7 +52,7 @@ import img300 from "figma:asset/maxi3.png";
 import img257 from "figma:asset/maxi5.png";
 import img265 from "figma:asset/maxi1.png";
 import img681 from "figma:asset/maxi9.png";
-import imgComponent6 from "figma:asset/2c25ec080f0423dd7f25b08ecd32261bedb5d65a.png";
+import imgComponent6 from "figma:asset/whatsapp3.png";
 
 function BackgroundBackgroundImage({ children }: React.PropsWithChildren<{}>) {
   return (
@@ -406,8 +406,8 @@ function ContainerBackgroundImage({ text, text1, additionalClassNames = "" }: Co
 
 function ComponentBackgroundImage() {
   return (
-    <BackgroundImage4 additionalClassNames="h-[49px] w-[154px]">
-      <img alt="" className="absolute h-[76.61%] left-0 max-w-none top-[11.7%] w-full" src={imgComponent1} />
+    <BackgroundImage4 additionalClassNames="h-[40px] w-[164px]">
+      <img alt="" className="absolute h-full left-0 max-w-none top-0 w-full object-contain" src={imgComponent1} />
     </BackgroundImage4>
   );
 }

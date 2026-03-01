@@ -3,39 +3,39 @@ import { createPortal } from "react-dom";
 import svgPaths from "./svg-3h01exue33";
 import clsx from "clsx";
 import imgComponent1 from "figma:asset/grand_pe_logo.png";
-import imgComponent2 from "figma:asset/3fd0f8d0e8cb4e879d99f298bd07ac85a38f1aad.png";
-import imgComponent11 from "figma:asset/9cd90e9d09ab540087f7330bd8758c42b6882d87.png";
+import imgComponent2 from "figma:asset/christmas_banner2.png";
+import imgComponent11 from "figma:asset/audio1.png";
 import imgComponent12 from "figma:asset/refrigerator1.png";
-import imgComponent13 from "figma:asset/3f0e1b93902d9df30707d17e10d48ac11b67fa86.png";
+import imgComponent13 from "figma:asset/washing_machines.png";
 import imgComponent14 from "figma:asset/tv1.png";
 import imgComponent15 from "figma:asset/hisense2.png";
 import imgComponent16 from "figma:asset/appliances1.png";
-import imgComponent17 from "figma:asset/4f4404acb89936f8eef7c17c8b4d5c4bcc7645de.png";
+import imgComponent17 from "figma:asset/power_solution1.png";
 import imgComponent18 from "figma:asset/furnitures1.png";
 import imgContainer from "figma:asset/lg1.png";
 import imgDocMp4 from "figma:asset/video.png";
 import imgComponent19 from "figma:asset/lg6.png";
-import imgComponent20 from "figma:asset/59d577d0f8136d21c9e38156c47c122d0a23f421.png";
+import imgComponent20 from "figma:asset/hisense12.png";
 import imgComponent21 from "figma:asset/maxi8.png";
 import imgComponent22 from "figma:asset/huawei1.png";
 import imgComponent23 from "figma:asset/growatt1.png";
-import imgComponent24 from "figma:asset/8c8045af4b759a818af5f51e651dfb92fb2b6d59.png";
-import imgComponent25 from "figma:asset/2a5eab5e34c01a28c8c04d3e3a0eba2f0813c31e.png";
+import imgComponent24 from "figma:asset/jinko.png";
+import imgComponent25 from "figma:asset/deye3.png";
 import imgComponent26 from "figma:asset/actiu1.png";
 import imgContainer1 from "figma:asset/hisense9.png";
-import imgComponent3 from "figma:asset/5b5b979c73806392280d2bf469781da394e246f9.png";
+import imgComponent3 from "figma:asset/hisense14.png";
 import imgComponent4 from "figma:asset/hisense7.png";
 import imgComponent5 from "figma:asset/hisense8.png";
 import imgComponent6 from "figma:asset/hisense6.png";
 import imgComponent7 from "figma:asset/growatt1.png";
-import imgComponent8 from "figma:asset/2f3f2e7192ab27121e603c47d1224045b881ae64.png";
-import imgComponent9 from "figma:asset/6ae17ddf838acfc7ebfbf86154cfeab80d7b2ac4.png";
-import imgContainer2 from "figma:asset/0f3e28460737a81127d4d6a4af70bed2944ece16.png";
+import imgComponent8 from "figma:asset/growatt3.png";
+import imgComponent9 from "figma:asset/huawei5.png";
+import imgContainer2 from "figma:asset/lg11.png";
 import imgComponent10 from "figma:asset/lg_banner1.png";
 import imgComponent27 from "figma:asset/maxi2.png";
 import imgComponent28 from "figma:asset/hisense1.png";
 import imgOutOfStock from "figma:asset/out_of_stock_label.png";
-import imgComponent29 from "figma:asset/046e33f576771f1529a0a0515157f6b383ee7671.png";
+import imgComponent29 from "figma:asset/hisense13.png";
 import imgComponent30 from "figma:asset/whatsapp1.png";
 
 function BackgroundBackgroundImage({ children }: React.PropsWithChildren<{}>) {
@@ -270,8 +270,8 @@ function ComponentBackgroundImage1() {
 
 function ComponentBackgroundImage() {
   return (
-    <BackgroundImage2 additionalClassNames="h-[35px] w-[110px] sm:h-[49px] sm:w-[154px]">
-      <img alt="" className="absolute h-[76.61%] left-0 max-w-none top-[11.7%] w-full" src={imgComponent1} />
+    <BackgroundImage2 additionalClassNames="h-[35px] w-[144px] sm:h-[49px] sm:w-[201px]">
+      <img alt="" className="absolute h-full left-0 max-w-none top-0 w-full object-contain" src={imgComponent1} />
     </BackgroundImage2>
   );
 }
