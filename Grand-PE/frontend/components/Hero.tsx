@@ -4,15 +4,13 @@ import Image from 'next/image'
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from './Carousel'
 
 const heroImagesMobile = [
-  { src: '/images/carousel-small.png', alt: 'Discover Top Electronics' },
-  { src: '/images/carousel-small.png', alt: 'Discover Top Electronics 2' },
-  { src: '/images/carousel-small.png', alt: 'Discover Top Electronics 3' },
+  { src: '/images/carousel-1.jpg', alt: 'Discover Top Electronics' },
+  { src: '/images/carousel-2.jpg', alt: 'Discover Top Electronics 2' },
 ]
 
 const heroImagesDesktop = [
-  { src: '/images/carousel-big.png', alt: 'Discover Top Electronics' },
-  { src: '/images/carousel-big.png', alt: 'Discover Top Electronics 2' },
-  { src: '/images/carousel-big.png', alt: 'Discover Top Electronics 3' },
+  { src: '/images/carousel-1.jpg', alt: 'Discover Top Electronics' },
+  { src: '/images/carousel-2.jpg', alt: 'Discover Top Electronics 2' },
 ]
 
 export default function Hero() {
